@@ -15,10 +15,6 @@
  */
 class Solution {
     public boolean isValidBST(TreeNode root) {
-        
-        if(root==null || root.left ==null && root.right==null)
-            return true;
-        
         Stack<TreeNode> toVisit = new Stack<>();
         double prev = -Double.MAX_VALUE;
         TreeNode current;
